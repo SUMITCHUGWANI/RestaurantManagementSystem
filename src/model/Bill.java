@@ -2,7 +2,7 @@ package model;
 
 public class Bill {
 
-    private  static int id = 0;
+    private static int id = 0;
 
     private PayMode paymode;
 

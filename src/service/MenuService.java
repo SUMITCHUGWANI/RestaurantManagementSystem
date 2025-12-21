@@ -30,7 +30,6 @@ public class MenuService {
             throw new StaffDoesNotExists();
         }
         menu.updateFoodItem(oldItem, newItem);
-
     }
 
     public void removeItemToMenu(Staff staff, FoodItem foodItem){

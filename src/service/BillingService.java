@@ -23,6 +23,11 @@ public class BillingService {
         double totalAmountBeforeTax = 0.0;
         HashMap<FoodItem, Integer> orderMap = order.getOrderItemMap();
 
+//        for (FoodItem foodItem : orderMap.keySet()){
+//            totalAmountBeforeTax += foodItem.getPrice() * orderMap.get(foodItem);
+//        }
+
+
         for (Map.Entry<FoodItem, Integer> entry : orderMap.entrySet()){
             totalAmountBeforeTax += (entry.getKey().getPrice()) * entry.getValue();
         }

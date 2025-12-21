@@ -49,7 +49,7 @@ public class OrderService {
     public void addItemInOrder(Customer customer, HashMap<FoodItem, Integer> foodItem) throws OrderIsNotCreated {
         Order order = orderRepo.getOrder(customer);
         if ( null == order) {
-            throw new OrderIsNotCreated();
+            throw new OrderIsNotCreated("Order is not Created!");
         }
 
         HashMap<FoodItem, Integer> foodItemIntegerHashMap = order.getOrderItemMap();
